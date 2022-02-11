@@ -22,7 +22,7 @@ for(int i=0;i<=num-1;i++){
 printf("%d ",arr[i]);
 }
 
-
+//made changes for testing purpose in github
 
 
 // arr[0]=10;
