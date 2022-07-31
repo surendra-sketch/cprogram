@@ -42,10 +42,9 @@ class gfg
 int main()
 {
 	gfg g ;
-	char str[] = "test string";
+ 	char str[]="gshdghghssdh";
 	g.printDups(str);
-	//getchar();
-	return 0;
+ 	return 0;
 }
 
 // This code is contributed by SoM15242
