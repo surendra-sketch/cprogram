@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 int password(char s[8]){
 
- int num =0,cap=0 ;
+ int num =0,cap=0;
  if(strlen(s)>8){
   printf("Invaid password ! \nPassword must be less than 8 charactors");
   return 0;
@@ -12,21 +13,27 @@ if(s[0]>=48 && s[0]<=57){
  printf("Invaid password ! \nDont put integer at first palce");
 return 0;
 }
-for(int i=0;s[i]<="\0";i++){
-if(s[i] == " "){
-    return 0;
-}else if (s[i]>=65 && s[i]>=90){
+
+for(int i=0;s[i]<='\0';i++){
+
+if (s[i]>=65 && s[i]>=90){
     cap=1;
     
  }
  else if (s[i]>=48 &&s[i]<=57){
     num=1;
  }
-
-return  (num&&cap) ;
+ else if(s[i] ==' '){
+  return 0;
+ }
+ else{
+   return 1;
+ }
+  return  (num&&cap) ;
+}
 }
 
-}
+
 
 
 
@@ -44,7 +51,7 @@ if(res==0){
       
 }
 else{
-     printf(" congratulation you inserted a Valid  password ! \n");
+     printf("Congratulation you entered Valid  password ! \n");
 }
    
 

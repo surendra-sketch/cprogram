@@ -3,7 +3,7 @@
 #include<string.h>
 
 void main(){
-//input method (0) or ordinary//it dint consider space but gives exact length of str
+//input method (0) or ordinary//it didnt consider space but gives exact length of str
 /*
 // scanf("%s",str);
 // printf("%s",str);

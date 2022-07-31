@@ -15,6 +15,7 @@ int annagram(char str1[],char str2[]){
        i++;
    }
 
+
    i=0;
     while(str2[i] != '\0'){
        num2[str2[i]-'a']++;
@@ -22,7 +23,7 @@ int annagram(char str1[],char str2[]){
    }
 
 for(i=0;i<50;i++){
-printf("%s %s ",num1[i],num2[i]);
+// printf("%s %s ",num1[i],num2[i]);
 }
    for(i=0;i<50;i++){
           if(num1[i] != num2[i]){

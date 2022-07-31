@@ -11,14 +11,14 @@ printf("\nEnter the lenth of the array\n");
 scanf("%d",&num);
  int arr[num];
 
-for(int i=0;i<=num-1;i++){
+for(int i=0;i<num;i++){
     int a;
     printf("\nEnter element %d ",i);
     scanf("%d",&a);
     arr[i]=a;
 }
 
-for(int i=0;i<=num-1;i++){
+for(int i=0;i<num;i++){
 printf("%d ",arr[i]);
 }
 
